@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var coinbtn: UIButton!
     @IBOutlet weak var taplabel: UILabel!
     
+    @IBOutlet weak var done: UILabel!
+    
     @IBAction func onCoinBtn(sender: UIButton!) {
         currentTaps++
         updateTapsLable()
@@ -32,17 +34,19 @@ class ViewController: UIViewController {
     
     @IBAction func onPlayBtnPressed(sender: UIButton!) {
         if howmanytaps.text != nil && howmanytaps.text != "" {
-            
-            logoImg.hidden = true
-            howmanytaps.hidden = true
-            playbnt.hidden = true
-            
-            coinbtn.hidden = false
-            taplabel.hidden = false
-            
-            maxTaps = Int(howmanytaps.text!)!
-            currentTaps = 0
-            
+            if let numberOfTaps = Int(howmanytaps.text!) {
+                
+                logoImg.hidden = true
+                howmanytaps.hidden = true
+                playbnt.hidden = true
+                done.hidden = true
+                
+                coinbtn.hidden = false
+                taplabel.hidden = false
+                
+                maxTaps = numberOfTaps
+                currentTaps = 0
+            }
             updateTapsLable()
         }
     }
@@ -54,6 +58,7 @@ class ViewController: UIViewController {
         logoImg.hidden = false
         howmanytaps.hidden = false
         playbnt.hidden = false
+        done.hidden = false
         
         coinbtn.hidden = true
         taplabel.hidden = true

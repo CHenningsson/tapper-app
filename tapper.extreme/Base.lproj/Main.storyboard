@@ -8,6 +8,7 @@
         <mutableArray key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -83,6 +84,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great Work!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feI-SX-M3W">
+                                <rect key="frame" x="176" y="170" width="247" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="Td0-FY-3rL"/>
+                                    <constraint firstAttribute="width" constant="247" id="dsh-ck-DMb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -91,6 +102,7 @@
                             <constraint firstItem="MvB-Xx-AaH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EoC-UA-WBq"/>
                             <constraint firstItem="M3b-vk-Wea" firstAttribute="top" secondItem="rLH-a5-1gM" secondAttribute="bottom" constant="50" id="Fre-C5-ITP"/>
                             <constraint firstItem="gBF-Iy-57Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="V4d-Kp-rGG"/>
+                            <constraint firstItem="feI-SX-M3W" firstAttribute="top" secondItem="gBF-Iy-57Y" secondAttribute="bottom" constant="14" id="apE-zN-04X"/>
                             <constraint firstItem="MvB-Xx-AaH" firstAttribute="top" secondItem="VEN-3y-ALf" secondAttribute="bottom" constant="25" id="cPk-h9-TSp"/>
                             <constraint firstItem="vvP-1o-jc6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eIp-aW-1UG"/>
                             <constraint firstItem="VEN-3y-ALf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eoS-pQ-pbF"/>
@@ -102,6 +114,7 @@
                             <constraint firstItem="gBF-Iy-57Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q41-wZ-nmp"/>
                             <constraint firstItem="gBF-Iy-57Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="uWS-DP-Ctt"/>
                             <constraint firstItem="gBF-Iy-57Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uvd-AH-ukC"/>
+                            <constraint firstItem="feI-SX-M3W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vwK-XZ-3VW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MvB-Xx-AaH" secondAttribute="bottom" constant="77" id="wwK-1f-Be2"/>
                         </constraints>
                         <variation key="default">
@@ -113,6 +126,7 @@
                     </view>
                     <connections>
                         <outlet property="coinbtn" destination="rLH-a5-1gM" id="LvI-ne-rsk"/>
+                        <outlet property="done" destination="feI-SX-M3W" id="fwA-52-f1v"/>
                         <outlet property="howmanytaps" destination="VEN-3y-ALf" id="cH5-dD-tq2"/>
                         <outlet property="logoImg" destination="gBF-Iy-57Y" id="MpR-P4-gCe"/>
                         <outlet property="playbnt" destination="MvB-Xx-AaH" id="R5S-m7-f0U"/>
